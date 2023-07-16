@@ -5,7 +5,6 @@ import java.util.stream.IntStream;
 public class P1 {
     private long multiple_sum(long limit)
     {
-        long res = 0L;
         long num_of_threes = (limit - 1) / 3;
         long num_of_fives = (limit - 1) / 5;
         long num_of_overlap = (limit - 1) / 15;
