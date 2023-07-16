@@ -174,17 +174,21 @@ public class Timing {
             p.starting_primes = new ArrayList<>();
             p.factorizations = new HashMap<>();
 
-            int n = 10000000;
+            int n = 100000000;
 
+            long start_time = System.nanoTime();
             p.initializeFaster(n);
             System.out.println("Primes Initialized");
+            long end_time = System.nanoTime();
+            System.out.println("Overlap Initialized in " + ((end_time-start_time)/(Math.pow(10, 9))) + " seconds");
+
 
             p.initializeFactorizations(n);
             System.out.println("Factorizations Initialized");
 
-            long start_time = System.nanoTime();
+            start_time = System.nanoTime();
             p.initializeOverlap();
-            long end_time = System.nanoTime();
+            end_time = System.nanoTime();
             System.out.println("Overlap Initialized in " + ((end_time-start_time)/(Math.pow(10, 9))) + " seconds");
         }
 }
