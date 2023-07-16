@@ -30,9 +30,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.P9">
-    <configuration name="P3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="P3" />
+  <component name="RunManager" selected="Application.P10">
+    <configuration name="P10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="P10" />
       <module name="ProjectEuler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,11 +68,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.P10" />
         <item itemvalue="Application.P9" />
         <item itemvalue="Application.P8" />
         <item itemvalue="Application.P7" />
         <item itemvalue="Application.P4" />
-        <item itemvalue="Application.P3" />
       </list>
     </recent_temporary>
   </component>
