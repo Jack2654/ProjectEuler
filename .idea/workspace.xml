@@ -2,72 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19efb03c-d369-433d-8bd1-d391131395e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Euler100.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/HelpfulMethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/HugeNum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P51$sharedNumbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P51.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P52.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P53.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P54$Hand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P54.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P55.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P56.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P57.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P58.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P59.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P60.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P61.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P62.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P63.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P64.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P65.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P66.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P67.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P68.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P69.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P70.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P71.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P72.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P90$dice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P90.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/P97.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Euler100/Timing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/HelpfulMethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/HugeNum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P51$sharedNumbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P51.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P52.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P53.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P54$Hand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P54.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P55.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P56.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P57.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P58.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P59.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P60.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P61.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P62.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P63.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P64.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P65.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P66.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P67.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P68.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P69.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P70.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P71.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P72.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P73.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P90$dice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P90.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P97.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/Timing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_10/P1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_10/P1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectEuler/P1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
