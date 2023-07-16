@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19efb03c-d369-433d-8bd1-d391131395e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/Timing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectEuler/Timing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Timing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Timing.java" afterDir="false" />
-    </list>
+    <list default="true" id="19efb03c-d369-433d-8bd1-d391131395e0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.P12">
+  <component name="RunManager" selected="Application.P13">
     <configuration name="P10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="P10" />
       <module name="ProjectEuler" />
@@ -49,8 +45,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="P8" />
+    <configuration name="P13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="P13" />
       <module name="ProjectEuler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,11 +68,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.P13" />
         <item itemvalue="Application.P12" />
         <item itemvalue="Application.Timing" />
         <item itemvalue="Application.P10" />
         <item itemvalue="Application.P9" />
-        <item itemvalue="Application.P8" />
       </list>
     </recent_temporary>
   </component>
