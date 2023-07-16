@@ -5,7 +5,7 @@ import java.util.*;
 import java.util.stream.IntStream;
 
 public class P5 {
-    public long answer(long limit)
+    private long answer(long limit)
     {
         long min = 1;
         for(long i = 1; i <= limit; i++)

@@ -4,24 +4,31 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class P4 {
+public class P6 {
     private long answer(long limit)
     {
-        long max = 1;
-        for(long i = 100; i<1000; i++)
+        long ans1 = sum_of_squares(limit);
+        long ans2 = square_of_sums(limit);
+        if(ans1 > ans2)
+            return ans1-ans2;
+        return ans2-ans1;
+    }
+
+    private long sum_of_squares(long limit)
+    {
+        long result = 0;
+        for(long i = 1; i <= limit; i++)
         {
-            for(long j = 100; j<1000; j++)
-            {
-                long product = i * j;
-                if(product >= limit)
-                    continue;
-                if((product > max) && (isPalindrome(product)))
-                {
-                    max = product;
-                }
-            }
+            result += i * i;
         }
-        return max;
+        return result;
+    }
+
+    private long square_of_sums(long limit)
+    {
+        long result = limit * (limit + 1) / 2;
+        result *= result;
+        return result;
     }
 
     public boolean isPalindrome(long i)
@@ -46,7 +53,7 @@ public class P4 {
     }
 
     public static void main(String[] args) throws IOException {
-        P4 p = new P4();
+        P6 p = new P6();
         ArrayList<Long> inputs = p.read_input();
         for (Long input : inputs) {
             System.out.println(p.answer(input));
