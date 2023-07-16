@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19efb03c-d369-433d-8bd1-d391131395e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/1_10/P4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_10/P4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_10/P5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_10/P5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_10/P6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_10/P6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.P4">
+  <component name="RunManager" selected="Application.P7">
     <configuration name="HelpfulMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HelpfulMethods" />
       <module name="ProjectEuler" />
@@ -62,8 +61,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="P7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="P7" />
+      <module name="ProjectEuler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.P7" />
         <item itemvalue="Application.P4" />
         <item itemvalue="Application.P3" />
         <item itemvalue="Application.P1" />
