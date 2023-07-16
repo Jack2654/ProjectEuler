@@ -1,6 +1,11 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.TreeSet;
+import java.util.stream.IntStream;
+import java.util.stream.*;
 
 public class HelpfulMethods {
     //private TreeSet<Integer> primes = new TreeSet<>();
@@ -15,6 +20,21 @@ public class HelpfulMethods {
                 primes.add(i);
             }
         }
+    }
+
+    public ArrayList<Long> read_input() throws IOException {
+        ArrayList<Long> ret = new ArrayList<>();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(bufferedReader.readLine().trim());
+        IntStream.range(0, t).forEach(tItr -> {
+            try {
+                ret.add(Long.parseLong(bufferedReader.readLine().trim()));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        bufferedReader.close();
+        return ret;
     }
 
     public boolean isPrimeFast(int l)
