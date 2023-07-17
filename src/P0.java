@@ -1,33 +1,12 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.*;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.stream.IntStream;
 
-public class P9 {
-
+public class P0 {
     private long answer(long limit)
     {
-        long max = 0;
-        for(long i = 1; i < limit - 1; i++)
-        {
-            for(long j = i+1; j < limit - i; j++)
-            {
-                long k = limit - i - j;
-                if(k < j)
-                    break;
-                if(i*i + j*j - k*k == 0)
-                {
-                    if(i*j*k > max)
-                        max = i*j*k;
-                }
-            }
-        }
-        if(max > 0)
-            return max;
-        return -1;
+        return 0;
     }
-
 
     private ArrayList<Long> read_input() throws IOException {
         ArrayList<Long> ret = new ArrayList<>();
@@ -45,10 +24,11 @@ public class P9 {
     }
 
     public static void main(String[] args) throws IOException {
-        P9 p = new P9();
+        P0 p = new P0();
         ArrayList<Long> inputs = p.read_input();
-        for (Long input : inputs) {
-            System.out.println(p.answer(input));
+        for(int index = 0; index < inputs.size(); index++)
+        {
+            System.out.println(p.answer(inputs.get(index)));
         }
     }
 }

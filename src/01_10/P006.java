@@ -4,49 +4,31 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class P7 {
-    private ArrayList<Integer> primes = new ArrayList<>();
-
+public class P006 {
     private long answer(long limit)
     {
-        return primes.get((int) limit - 1);
+        long ans1 = sum_of_squares(limit);
+        long ans2 = square_of_sums(limit);
+        if(ans1 > ans2)
+            return ans1-ans2;
+        return ans2-ans1;
     }
 
-    public void initializeFaster(long count)
+    private long sum_of_squares(long limit)
     {
-        primes.add(2);
-        primes.add(3);
-        long counter = 2;
-        int i = 0;
-        while(count > counter)
+        long result = 0;
+        for(long i = 1; i <= limit; i++)
         {
-            i+=6;
-            if (isPrimeFast(i-1))
-            {
-                primes.add(i-1);
-                counter++;
-            }
-            if (isPrimeFast(i+1))
-            {
-                primes.add(i+1);
-                counter++;
-            }
+            result += i * i;
         }
+        return result;
     }
 
-    public boolean isPrimeFast(int l)
+    private long square_of_sums(long limit)
     {
-        if(l<2) return false;
-        int sqrt = (int) Math.sqrt(l);
-        for(Integer p : primes)
-        {
-            if(l % p == 0) return false;
-            if(p > sqrt + 1)
-            {
-                return true;
-            }
-        }
-        return true;
+        long result = limit * (limit + 1) / 2;
+        result *= result;
+        return result;
     }
 
     private ArrayList<Long> read_input() throws IOException {
@@ -65,10 +47,8 @@ public class P7 {
     }
 
     public static void main(String[] args) throws IOException {
-        P7 p = new P7();
+        P006 p = new P006();
         ArrayList<Long> inputs = p.read_input();
-
-        p.initializeFaster(Collections.max(inputs));
         for (Long input : inputs) {
             System.out.println(p.answer(input));
         }

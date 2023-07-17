@@ -4,30 +4,51 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class P4 {
+public class P010 {
+    private ArrayList<Integer> primes = new ArrayList<>();
+
     private long answer(long limit)
     {
-        long max = 1;
-        for(long i = 100; i<1000; i++)
+        long sum = 0;
+        for(Integer p: primes)
         {
-            for(long j = 100; j<1000; j++)
-            {
-                long product = i * j;
-                if(product >= limit)
-                    continue;
-                if((product > max) && (isPalindrome(product)))
-                {
-                    max = product;
-                }
-            }
+            if(p > limit)
+                break;
+            sum += p;
         }
-        return max;
+        return sum;
     }
 
-    public boolean isPalindrome(long i)
+    public void initializeFaster(long n)
     {
-        StringBuilder s = new StringBuilder(i + "");
-        return s.toString().equals(s.reverse().toString());
+        primes.add(2);
+        primes.add(3);
+        for(int i = 6; i<=n; i+=6)
+        {
+            if (isPrimeFast(i-1))
+            {
+                primes.add(i-1);
+            }
+            if (isPrimeFast(i+1))
+            {
+                primes.add(i+1);
+            }
+        }
+    }
+
+    public boolean isPrimeFast(int l)
+    {
+        if(l<2) return false;
+        int sqrt = (int) Math.sqrt(l);
+        for(Integer p : primes)
+        {
+            if(l % p == 0) return false;
+            if(p > sqrt + 1)
+            {
+                return true;
+            }
+        }
+        return true;
     }
 
     private ArrayList<Long> read_input() throws IOException {
@@ -46,8 +67,10 @@ public class P4 {
     }
 
     public static void main(String[] args) throws IOException {
-        P4 p = new P4();
+        P010 p = new P010();
         ArrayList<Long> inputs = p.read_input();
+
+        p.initializeFaster(Collections.max(inputs));
         for (Long input : inputs) {
             System.out.println(p.answer(input));
         }

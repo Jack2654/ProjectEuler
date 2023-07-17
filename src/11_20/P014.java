@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class P14 {
+public class P014 {
     private HashMap<Long, Long> cache;
     private HashMap<Long, Long> cacheL2;
 
@@ -69,7 +69,7 @@ public class P14 {
     }
 
     public static void main(String[] args) throws IOException {
-        P14 p = new P14();
+        P014 p = new P014();
         ArrayList<Long> inputs = p.read_input();
         p.cache = new HashMap<>();
         p.cacheL2 = new HashMap<>();

@@ -3,7 +3,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.stream.IntStream;
 
-public class P13 {
+public class P013 {
     private String answer(ArrayList<BigInteger> values)
     {
         BigInteger sum = new BigInteger("0");
@@ -30,7 +30,7 @@ public class P13 {
     }
 
     public static void main(String[] args) throws IOException {
-        P13 p = new P13();
+        P013 p = new P013();
         ArrayList<BigInteger> inputs = p.read_input();
         System.out.println(p.answer(inputs));
     }

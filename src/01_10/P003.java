@@ -5,7 +5,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.stream.IntStream;
 
-public class P3 {
+public class P003 {
     private long answer(long limit)
     {
         if(new BigInteger(String.valueOf(limit)).isProbablePrime(1))
@@ -74,7 +74,7 @@ public class P3 {
     }
 
     public static void main(String[] args) throws IOException {
-        P3 p = new P3();
+        P003 p = new P003();
         ArrayList<Long> inputs = p.read_input();
         for (Long input : inputs) {
             System.out.println(p.answer(input));

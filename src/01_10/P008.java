@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class P8 {
+public class P008 {
     private ArrayList<String> values;
     private long answer(long n, long k, String val) {
         long max = 0;
@@ -56,7 +56,7 @@ public class P8 {
     }
 
     public static void main(String[] args) throws IOException {
-        P8 p = new P8();
+        P008 p = new P008();
         p.values = new ArrayList<>();
         ArrayList<Long> inputs = p.read_input();
         for(int i = 0; i < inputs.size(); i += 2)

@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class P5 {
+public class P005 {
     private long answer(long limit)
     {
         long min = 1;
@@ -46,7 +46,7 @@ public class P5 {
     }
 
     public static void main(String[] args) throws IOException {
-        P5 p = new P5();
+        P005 p = new P005();
         ArrayList<Long> inputs = p.read_input();
         for (Long input : inputs) {
             System.out.println(p.answer(input));

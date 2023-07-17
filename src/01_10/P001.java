@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.stream.IntStream;
 
-public class P1 {
+public class P001 {
     private long multiple_sum(long limit)
     {
         long num_of_threes = (limit - 1) / 3;
@@ -30,7 +30,7 @@ public class P1 {
     }
 
     public static void main(String[] args) throws IOException {
-        P1 p = new P1();
+        P001 p = new P001();
         ArrayList<Long> inputs = p.read_input();
         for(int index = 0; index < inputs.size(); index++)
         {

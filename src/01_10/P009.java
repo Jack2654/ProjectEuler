@@ -4,32 +4,30 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class P6 {
+public class P009 {
+
     private long answer(long limit)
     {
-        long ans1 = sum_of_squares(limit);
-        long ans2 = square_of_sums(limit);
-        if(ans1 > ans2)
-            return ans1-ans2;
-        return ans2-ans1;
-    }
-
-    private long sum_of_squares(long limit)
-    {
-        long result = 0;
-        for(long i = 1; i <= limit; i++)
+        long max = 0;
+        for(long i = 1; i < limit - 1; i++)
         {
-            result += i * i;
+            for(long j = i+1; j < limit - i; j++)
+            {
+                long k = limit - i - j;
+                if(k < j)
+                    break;
+                if(i*i + j*j - k*k == 0)
+                {
+                    if(i*j*k > max)
+                        max = i*j*k;
+                }
+            }
         }
-        return result;
+        if(max > 0)
+            return max;
+        return -1;
     }
 
-    private long square_of_sums(long limit)
-    {
-        long result = limit * (limit + 1) / 2;
-        result *= result;
-        return result;
-    }
 
     private ArrayList<Long> read_input() throws IOException {
         ArrayList<Long> ret = new ArrayList<>();
@@ -47,7 +45,7 @@ public class P6 {
     }
 
     public static void main(String[] args) throws IOException {
-        P6 p = new P6();
+        P009 p = new P009();
         ArrayList<Long> inputs = p.read_input();
         for (Long input : inputs) {
             System.out.println(p.answer(input));

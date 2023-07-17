@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.stream.IntStream;
 
-public class P15 {
+public class P015 {
     private Long[][] paths;
     private long answer(long m, long n)
     {
@@ -45,7 +45,7 @@ public class P15 {
     }
 
     public static void main(String[] args) throws IOException {
-        P15 p = new P15();
+        P015 p = new P015();
         ArrayList<String> inputs = p.read_input();
         for (String input : inputs) {
             String[] grid = input.split(" ");

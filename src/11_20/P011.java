@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.IntStream;
 
-public class P11 {
+public class P011 {
     private long answer(ArrayList<ArrayList<String>> full) {
         ArrayList<ArrayList<Long>> formatted = new ArrayList<>();
         for(ArrayList<String> row: full)
@@ -111,7 +111,7 @@ public class P11 {
     }
 
     public static void main(String[] args) throws IOException {
-        P11 p = new P11();
+        P011 p = new P011();
         ArrayList<ArrayList<String>> inputs = p.read_input();
         System.out.println(p.answer(inputs));
     }

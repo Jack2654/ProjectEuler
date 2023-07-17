@@ -1,26 +1,33 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
+import java.util.*;
 import java.util.stream.IntStream;
 
-public class P2 {
-    private long sum(long limit)
+public class P004 {
+    private long answer(long limit)
     {
-        long last = 1;
-        long current = 1;
-        long next = 1;
-        long sum = 0;
-        while(next < limit)
+        long max = 1;
+        for(long i = 100; i<1000; i++)
         {
-            if((next % 2) == 0)
-                sum += next;
-
-            next = current + last;
-            last = current;
-            current = next;
+            for(long j = 100; j<1000; j++)
+            {
+                long product = i * j;
+                if(product >= limit)
+                    continue;
+                if((product > max) && (isPalindrome(product)))
+                {
+                    max = product;
+                }
+            }
         }
-        return sum;
+        return max;
+    }
+
+    public boolean isPalindrome(long i)
+    {
+        StringBuilder s = new StringBuilder(i + "");
+        return s.toString().equals(s.reverse().toString());
     }
 
     private ArrayList<Long> read_input() throws IOException {
@@ -39,12 +46,10 @@ public class P2 {
     }
 
     public static void main(String[] args) throws IOException {
-        P2 p = new P2();
+        P004 p = new P004();
         ArrayList<Long> inputs = p.read_input();
-        for(int index = 0; index < inputs.size(); index++)
-        {
-            System.out.println(p.sum(inputs.get(index)));
+        for (Long input : inputs) {
+            System.out.println(p.answer(input));
         }
-
     }
 }

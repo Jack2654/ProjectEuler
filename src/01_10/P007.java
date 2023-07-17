@@ -4,34 +4,32 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class P10 {
+public class P007 {
     private ArrayList<Integer> primes = new ArrayList<>();
 
     private long answer(long limit)
     {
-        long sum = 0;
-        for(Integer p: primes)
-        {
-            if(p > limit)
-                break;
-            sum += p;
-        }
-        return sum;
+        return primes.get((int) limit - 1);
     }
 
-    public void initializeFaster(long n)
+    public void initializeFaster(long count)
     {
         primes.add(2);
         primes.add(3);
-        for(int i = 6; i<=n; i+=6)
+        long counter = 2;
+        int i = 0;
+        while(count > counter)
         {
+            i+=6;
             if (isPrimeFast(i-1))
             {
                 primes.add(i-1);
+                counter++;
             }
             if (isPrimeFast(i+1))
             {
                 primes.add(i+1);
+                counter++;
             }
         }
     }
@@ -67,7 +65,7 @@ public class P10 {
     }
 
     public static void main(String[] args) throws IOException {
-        P10 p = new P10();
+        P007 p = new P007();
         ArrayList<Long> inputs = p.read_input();
 
         p.initializeFaster(Collections.max(inputs));
