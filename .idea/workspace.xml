@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="19efb03c-d369-433d-8bd1-d391131395e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectEuler/P15.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.P016">
+  <component name="RunManager" selected="Application.P017">
     <configuration name="P016" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="P016" />
       <module name="ProjectEuler" />
@@ -42,8 +41,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="P12" />
+    <configuration name="P017" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="P017" />
       <module name="ProjectEuler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,11 +71,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.P017" />
         <item itemvalue="Application.P016" />
         <item itemvalue="Application.P15" />
         <item itemvalue="Application.P14" />
         <item itemvalue="Application.P13" />
-        <item itemvalue="Application.P12" />
       </list>
     </recent_temporary>
   </component>
